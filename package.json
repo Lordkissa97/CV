@@ -4,8 +4,10 @@
     "description": "Curriculum Vitae project",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js",
-        "test": "echo \"No tests specified\" && exit 0"
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
     },
     "keywords": [
         "cv",
@@ -13,6 +15,7 @@
         "profile"
     ],
     "author": "",
+    "homepage": ".",
     "license": "MIT",
     "dependencies": {
         "react": "^19.1.1"
