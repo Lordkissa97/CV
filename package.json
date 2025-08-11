@@ -22,6 +22,6 @@
         "@types/react-dom": "^19.1.7"
     },
     "publishConfig": {
-        "registry": "https://npm.pkg.github.com/"
+        "Lordkissa97:registry": "https://npm.pkg.github.com/"
     }
 }
