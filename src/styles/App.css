@@ -1,0 +1,69 @@
+/* App.css - Basic CV layout styles */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.cv-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.cv-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.cv-title {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.cv-section {
+    margin-bottom: 28px;
+}
+
+.cv-section-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2a2a2a;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 4px;
+}
+
+.cv-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cv-list-item {
+    margin-bottom: 10px;
+}
+
+.cv-details {
+    color: #444;
+    font-size: 1rem;
+}
+
+.cv-footer {
+    text-align: center;
+    color: #888;
+    font-size: 0.95rem;
+    margin-top: 32px;
+}
