@@ -17,6 +17,7 @@
     "homepage": ".",
     "license": "MIT",
     "dependencies": {
+        "node": "^22.18.0",
         "node.js": "^0.0.1-security",
         "react": "^19.1.1",
         "react-dom": "^19.1.1",
