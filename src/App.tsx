@@ -47,44 +47,83 @@ const cvData = {
 const App: React.FC = () => (
   <div
     style={{
-      maxWidth: 800,
+      maxWidth: 900,
       margin: "2rem auto",
-      fontFamily: "Arial, sans-serif",
-      padding: "2rem",
-      background: "#fff",
-      borderRadius: 8,
-      boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+      fontFamily: "Inter, Arial, sans-serif",
+      padding: "2.5rem 2rem",
+      background: "#f8f9fa",
+      borderRadius: 16,
+      boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
+      border: "1px solid #e3e6ea",
     }}
   >
-    <header>
-      <h1>{cvData.name}</h1>
-      <h2 style={{ color: "#555", fontWeight: 400 }}>{cvData.title}</h2>
-      <div style={{ marginBottom: "1rem", fontSize: "0.95rem", color: "#333" }}>
-        <span>{cvData.contact.email} | </span>
-        <span>{cvData.contact.phone} | </span>
-        <span>{cvData.contact.location} | </span>
-        <span>
-          <a
-            href={`https://${cvData.contact.linkedin}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {cvData.contact.linkedin}
-          </a>
-        </span>
+    <header
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "2rem",
+        borderBottom: "1px solid #e3e6ea",
+        paddingBottom: "1.5rem",
+        marginBottom: "2rem",
+      }}
+    >
+      <div style={{ flex: 1 }}>
+        <h1 style={{ fontSize: "2.5rem", margin: 0 }}>{cvData.name}</h1>
+        <h2
+          style={{
+            color: "#3a3a3a",
+            fontWeight: 500,
+            fontSize: "1.3rem",
+            margin: "0.5rem 0 0 0",
+          }}
+        >
+          {cvData.title}
+        </h2>
+        <div style={{ marginTop: "1rem", fontSize: "1rem", color: "#555" }}>
+          <span style={{ marginRight: "1.2rem" }}>
+            <strong>Email:</strong> {cvData.contact.email}
+          </span>
+          <span style={{ marginRight: "1.2rem" }}>
+            <strong>Phone:</strong> {cvData.contact.phone}
+          </span>
+          <span style={{ marginRight: "1.2rem" }}>
+            <strong>Location:</strong> {cvData.contact.location}
+          </span>
+          <span>
+            <strong>LinkedIn:</strong>{" "}
+            <a
+              href={`https://${cvData.contact.linkedin}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#0077b5" }}
+            >
+              {cvData.contact.linkedin}
+            </a>
+          </span>
+        </div>
       </div>
     </header>
-    <section>
-      <h3>Profile</h3>
-      <p>{cvData.summary}</p>
+    <section style={{ marginBottom: "2rem" }}>
+      <h3
+        style={{ color: "#0077b5", fontSize: "1.2rem", marginBottom: "0.5rem" }}
+      >
+        Profile
+      </h3>
+      <p style={{ color: "#333", fontSize: "1.05rem", lineHeight: 1.6 }}>
+        {cvData.summary}
+      </p>
     </section>
-    <section>
-      <h3>Skills</h3>
+    <section style={{ marginBottom: "2rem" }}>
+      <h3
+        style={{ color: "#0077b5", fontSize: "1.2rem", marginBottom: "0.5rem" }}
+      >
+        Skills
+      </h3>
       <ul
         style={{
           display: "flex",
           flexWrap: "wrap",
-          gap: "0.5rem",
+          gap: "0.7rem",
           listStyle: "none",
           padding: 0,
         }}
@@ -93,9 +132,13 @@ const App: React.FC = () => (
           <li
             key={skill}
             style={{
-              background: "#eee",
-              padding: "0.3rem 0.7rem",
-              borderRadius: 4,
+              background: "#e3e6ea",
+              color: "#0077b5",
+              padding: "0.4rem 1rem",
+              borderRadius: 20,
+              fontWeight: 500,
+              fontSize: "1rem",
+              boxShadow: "0 1px 4px rgba(0,0,0,0.04)",
             }}
           >
             {skill}
@@ -103,21 +146,53 @@ const App: React.FC = () => (
         ))}
       </ul>
     </section>
-    <section>
-      <h3>Experience</h3>
+    <section style={{ marginBottom: "2rem" }}>
+      <h3
+        style={{ color: "#0077b5", fontSize: "1.2rem", marginBottom: "0.5rem" }}
+      >
+        Experience
+      </h3>
       {cvData.experience.map((exp, idx) => (
-        <div key={idx} style={{ marginBottom: "1rem" }}>
-          <strong>{exp.role}</strong> at <em>{exp.company}</em>{" "}
+        <div
+          key={idx}
+          style={{
+            marginBottom: "1.2rem",
+            background: "#fff",
+            borderRadius: 8,
+            padding: "1rem",
+            boxShadow: "0 1px 4px rgba(0,0,0,0.04)",
+            border: "1px solid #e3e6ea",
+          }}
+        >
+          <strong style={{ fontSize: "1.1rem" }}>{exp.role}</strong> at{" "}
+          <em>{exp.company}</em>{" "}
           <span style={{ color: "#888" }}>({exp.period})</span>
-          <p>{exp.description}</p>
+          <p style={{ margin: "0.5rem 0 0 0", color: "#444" }}>
+            {exp.description}
+          </p>
         </div>
       ))}
     </section>
     <section>
-      <h3>Education</h3>
+      <h3
+        style={{ color: "#0077b5", fontSize: "1.2rem", marginBottom: "0.5rem" }}
+      >
+        Education
+      </h3>
       {cvData.education.map((edu, idx) => (
-        <div key={idx}>
-          <strong>{edu.degree}</strong>, {edu.institution}{" "}
+        <div
+          key={idx}
+          style={{
+            background: "#fff",
+            borderRadius: 8,
+            padding: "1rem",
+            marginBottom: "1rem",
+            boxShadow: "0 1px 4px rgba(0,0,0,0.04)",
+            border: "1px solid #e3e6ea",
+          }}
+        >
+          <strong style={{ fontSize: "1.05rem" }}>{edu.degree}</strong>,{" "}
+          {edu.institution}{" "}
           <span style={{ color: "#888" }}>({edu.period})</span>
         </div>
       ))}
