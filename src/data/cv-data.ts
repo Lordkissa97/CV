@@ -10,7 +10,7 @@ export const cvData: Profile = {
     linkedIn: 'linkedin.com/in/christian-eieland-alykkja-06b211258',
     github: 'github.com/Lordkissa97',
   },
-  summary: `Experienced software engineer with expertise in TypeScript, React, and modern web development.`,
+  summary: `Newly Educated software engineer with experience in TypeScript, React, and modern web development and design.`,
   skills: [
     'TypeScript',
     'React',
