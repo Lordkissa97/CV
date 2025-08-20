@@ -2,6 +2,7 @@
   "name": "cv",
   "version": "1.0.0",
   "description": "Curriculum Vitae project",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -46,7 +47,7 @@
     "Lordkissa97:registry": "https://npm.pkg.github.com/"
   },
   "engines": {
-    "node": "18.x",
-    "npm": ">=8.0.0"
+    "node": "22.x",
+    "npm": ">=10.0.0"
   }
 }
