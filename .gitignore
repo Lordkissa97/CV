@@ -58,3 +58,33 @@ coverage/
 
 # Prettier cache
 .prettiercache
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Vercel
+.vercel/
+
+# Next.js (if applicable)
+.next/
+out/
+
+# Vite
+.vite/
+vite.config.ts.timestamp-*
+
+# VS Code workspace settings (keep extensions.json but ignore user-specific settings)
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/.ropeproject
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build artifacts
+build-stats.json
+
+# Local development files
+.local
