@@ -149,11 +149,20 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: white;
+  min-height: 400px;
 }
 
 .react-pdf__Page__canvas {
-  display: block;
-  margin: 0 auto;
+  display: block !important;
+  margin: 0 auto !important;
+  background: white !important;
+}
+
+.react-pdf__Document {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Mobile Responsive */

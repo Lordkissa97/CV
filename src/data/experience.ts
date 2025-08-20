@@ -45,21 +45,21 @@ export const experiences: Experience[] = [
         name: 'Bachelor Project Report',
         type: 'pdf',
         url: '/documents/bachelor-project-phonero.pdf',
-        description: 'Detailed report of the legacy system migration project'
+        description: 'Detailed report of the legacy system migration project',
       },
       {
         name: 'Project Presentation',
         type: 'pdf',
         url: '/documents/phonero-presentation.pdf',
-        description: 'Final presentation slides for the project'
+        description: 'Final presentation slides for the project',
       },
       {
         name: 'Work Attestation',
         type: 'pdf',
-        url: '/documents/phonero-work-attestation.pdf',
-        description: 'Official work attestation from Phonero'
-      }
-    ]
+        url: '/Public/documents/AttestChristianEielandA_lykja.pdf',
+        description: 'Official work attestation from Phonero',
+      },
+    ],
   },
   {
     company: 'Norwegian Defence',
@@ -76,17 +76,17 @@ export const experiences: Experience[] = [
       'Maintained security protocols and procedures',
     ],
     achievements: [
-      'Successfully completed multiple security projects',
+      'security on military perimeter',
       'Developed strong attention to detail and discipline',
     ],
     documents: [
       {
-        name: 'Service Certificate',
+        name: 'Defence Certificate',
         type: 'pdf',
-        url: '/documents/norwegian-defence-certificate.pdf',
-        description: 'Official service certificate from Norwegian Defence'
-      }
-    ]
+        url: 'Public\\documents\\Sluttattest ETJ.pdf',
+        description: 'Official certificate from Norwegian Defence',
+      },
+    ],
   },
   {
     company: 'Apcoa Norway AS',
